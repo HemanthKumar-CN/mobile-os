@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import List from './components/card';
-import { Mi } from './components/card';
+import { Items } from './components/card';
+
 
 function App() {
   let data=["Android","Blackberry","iPhone","Windows Phone"];
@@ -14,7 +15,7 @@ function App() {
       <List from="iPhone"/>
       <List from="Windows Phone"/>
 
-      </ul>
+      </ul> */}
 
 
       <h3 style={{ textAlign:"center" }}>Mobile Manufacturers</h3>
@@ -24,15 +25,16 @@ function App() {
       <List from="Micromax"/>
       <List from="Apple"/>
 
-      </ul> */}
+      </ul> 
+
+      <ul>
+        <h3 style={{ textAlign:"center" }} >Mobile Manufacturers</h3>
+        <Items style={{ border:"1px solid  green", width:100, margin:"auto"}} />
+      </ul>
 
     
 
     
-
-    {data.map((u,i)=> {
-      return ( <div key={i} > <Mi {...u} /> </div> )
-    })}
 
 
     </div>

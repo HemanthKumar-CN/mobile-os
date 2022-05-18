@@ -8,12 +8,21 @@ export default List;
 
 
 
+const Items=()=> {
+    const MobileManufacturers=["Samsung","HTC","Micromax","Apple"];
 
-const Mi=(co)=> {
-    return( <div> Irerer {co} </div> )
+    return (
+        <div>
+            {
+                MobileManufacturers.map(item=> 
+                
+                        <li key={item}>{item}</li>
+                     )
+            }
+        </div>
+    )
 }
 
-export {Mi};
-
+export {Items};
 
  
