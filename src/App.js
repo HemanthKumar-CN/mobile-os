@@ -1,23 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import List from './components/card';
+import { Mi } from './components/card';
 
 function App() {
+  let data=["Android","Blackberry","iPhone","Windows Phone"];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <h3 style={{ textAlign:"center" }}>Mobile Operating System</h3>
+      <ul style={{ border:"1px  green", width:100, margin:"auto"}}>
+      <List from="Android"/>
+      <List from="Blackberry"/>
+      <List from="iPhone"/>
+      <List from="Windows Phone"/>
+
+      </ul>
+
+
+      <h3 style={{ textAlign:"center" }}>Mobile Manufacturers</h3>
+      <ul style={{ border:"1px  green", width:100, margin:"auto"}}>
+      <List from="Samsung"/>
+      <List from="HTC"/>
+      <List from="Micromax"/>
+      <List from="Apple"/>
+
+      </ul>
     </div>
   );
 }
