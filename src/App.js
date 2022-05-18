@@ -27,10 +27,12 @@ function App() {
 
       </ul> 
 
+      
       <ul>
-        <h3 style={{ textAlign:"center" }} >Mobile Manufacturers</h3>
+        <h3>Mobile Manufacturers</h3>
         <Items style={{ border:"1px solid  green", width:100, margin:"auto"}} />
       </ul>
+      
 
     
 
@@ -38,6 +40,8 @@ function App() {
 
 
     </div>
+
+    
   );
 }
 
