@@ -6,8 +6,14 @@ const List=(props)=> {
 
 export default List;
 
-const Mi=(cont)=> {
-    return( <div> {cont} </div> )
+
+
+
+const Mi=(co)=> {
+    return( <div> Irerer {co} </div> )
 }
 
 export {Mi};
+
+
+ 

@@ -7,7 +7,7 @@ function App() {
   let data=["Android","Blackberry","iPhone","Windows Phone"];
   return (
     <div className="App">
-       <h3 style={{ textAlign:"center" }}>Mobile Operating System</h3>
+       {/* <h3 style={{ textAlign:"center" }}>Mobile Operating System</h3>
       <ul style={{ border:"1px  green", width:100, margin:"auto"}}>
       <List from="Android"/>
       <List from="Blackberry"/>
@@ -24,9 +24,20 @@ function App() {
       <List from="Micromax"/>
       <List from="Apple"/>
 
-      </ul>
+      </ul> */}
+
+    
+
+    
+
+    {data.map((u,i)=> {
+      return ( <div key={i} > <Mi {...u} /> </div> )
+    })}
+
+
     </div>
   );
 }
 
 export default App;
+
